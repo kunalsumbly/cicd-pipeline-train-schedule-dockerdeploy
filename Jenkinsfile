@@ -15,9 +15,9 @@ pipeline {
             steps {
                 script {
                     app = docker.build("kunalsumbly/train-schedule")
-                    app.inside {
+                    /*app.inside {
                         sh 'echo $(curl localhost:8080)'
-                    }
+                    }*/
                 }
             } // build docker step ends
         } // build docker stage ends
